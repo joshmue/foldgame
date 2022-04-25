@@ -119,7 +119,7 @@ const i18n = {
   }
 }
   export default {
-    name: 'Game',
+    name: 'FoldgameGame',
     created: function() {
       this.connectToWs();
       setInterval(this.pushUpdateIfHost, 1000);

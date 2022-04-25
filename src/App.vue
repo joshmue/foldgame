@@ -13,13 +13,13 @@
     </v-app-bar>
 
     <v-main>
-      <Game/>
+      <FoldgameGame/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Game from './components/Game';
+import FoldgameGame from './components/Game';
 window.onbeforeunload = function() {
   return "Do not leave, you may have unfinished business";
 }
@@ -29,7 +29,7 @@ export default {
   name: 'App',
 
   components: {
-    Game,
+    FoldgameGame,
   },
 
   data: () => ({
