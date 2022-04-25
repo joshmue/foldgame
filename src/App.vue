@@ -1,28 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <i class="fa fa-map fa-2x fa-rotate-90"></i>
+      <v-spacer></v-spacer>
+      <span style="font-size: 2em">Foldgame</span>
+      <v-spacer></v-spacer>
+      <i class="fa fa-map fa-2x fa-rotate-90"></i>
+    </v-app-bar>
+
+    <v-main>
+      <Game/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Game from './components/Game';
+window.onbeforeunload = function() {
+  return "Do not leave, you may have unfinished business";
+}
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    Game,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
