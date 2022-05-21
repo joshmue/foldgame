@@ -16,7 +16,7 @@
 
 1. writing down some answer to a question on a sheet of paper
 2. passing the sheet of paper to the next player
-3. repeating steps 1+2 until the series of questions end
+3. repeating steps 1+2 until the series of follow-up questions ends
 4. disclosing the own random story to the group by being "interviewed" by another player
 
 While sometimes the results are just weird nonsense, often times they can be
