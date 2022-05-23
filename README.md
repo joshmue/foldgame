@@ -40,4 +40,13 @@ Changing that would require implementing some sort of lobby management mechanics
 
 ### Built With
 
-* Vuetify, FontAwesome
+Frontend:
+
+* Vuetify
+* FontAwesome
+* json-patch
+* and of course much more (it's JavaScript after all)
+
+Backend:
+
+* Go with Gorilla Websocket library
