@@ -22,6 +22,17 @@
 While sometimes the results are just weird nonsense, often times they can be
 the cause of amusement.
 
+### Deployment
+
+Foldgame is basically a simple SPA which opens a WebSocket to a server which
+has no knowledge of game mechanics, but just serves as a hub for all incoming
+JSON messages. See simple [Go implementation](./wsecho).
+
+### Limitations
+
+Currently, there can be only a single concurrent game on each domain respectively WebSocket server.
+Changing that would require implementing some sort of lobby management mechanics.
+
 ### Built With
 
 * Vuetify, FontAwesome
