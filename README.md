@@ -28,8 +28,10 @@ Foldgame is basically a simple SPA which opens a WebSocket to a server which
 has no knowledge of game mechanics, but just serves as a hub for all incoming
 JSON messages. See simple [Go implementation](./wsecho).
 
-A reverse proxy may be set up to handle authentification as well to route `/ws` to
-`wsecho` and `/` to a file server serving the built SPA.
+A reverse proxy may be set up to...
+- handle authentification
+- route `/ws` to `wsecho`
+- route `/*` to a file server serving the built SPA.
 
 ### Limitations
 
